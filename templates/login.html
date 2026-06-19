@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Complaint Management System</h1>
+
+    <form method="POST" action="/login">
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter Email">
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter Password">
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

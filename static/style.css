@@ -1,0 +1,206 @@
+/* ===== GENERAL ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef4ff, #f8fbff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 420px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.12);
+    border-top: 5px solid #0d6efd;
+}
+
+
+/* ===== ADMIN CONTAINER ===== */
+.admin-container {
+    width: 900px;
+    max-width: 95%;
+    overflow-x: auto;
+}
+
+
+/* ===== HEADING ===== */
+h1 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+
+/* ===== LABEL ===== */
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #444;
+}
+
+
+/* ===== INPUT FIELDS ===== */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #cfd8e3;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f9fbff;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+
+/* ===== INPUT FOCUS ===== */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+    background-color: #fff;
+}
+
+
+/* ===== TEXTAREA ===== */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background: linear-gradient(to right, #0d6efd, #0056d2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* ===== BUTTON HOVER ===== */
+button:hover {
+    background: linear-gradient(to right, #0056d2, #0041a8);
+    transform: translateY(-2px);
+}
+
+
+/* ===== ADMIN TABLE ===== */
+table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    margin-top: 25px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ===== TABLE HEADER ===== */
+th {
+    background: linear-gradient(to right, #0d6efd, #0056d2);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* ===== TABLE DATA ===== */
+td {
+    padding: 16px;
+    border-bottom: 1px solid #e8edf5;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+
+
+/* ===== TABLE ROW HOVER ===== */
+tr:hover {
+    background-color: #f5f9ff;
+    transition: 0.3s;
+}
+
+
+/* ===== STATUS COLUMN ===== */
+td:last-child {
+    font-weight: bold;
+}
+
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    text-decoration: none;
+    background: #0d6efd;
+    color: white;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+/* ===== BACK BUTTON HOVER ===== */
+.back-btn:hover {
+    background: #0056d2;
+    transform: translateY(-2px);
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 900px) {
+
+    .admin-container {
+        width: 95%;
+    }
+
+    .container {
+        width: 90%;
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
